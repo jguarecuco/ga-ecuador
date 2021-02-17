@@ -73,9 +73,9 @@ module.exports = {
         const arti = req.body;
         try {
             let count = await Articulo.count({
-                where:{
-                    dactivo_id: arti.dactivo_id 
-                }
+                // where:{
+                //     dactivo_id: arti.dactivo_id 
+                // }
             });
             let articulo = await Articulo.create({
                 codigo: arti.codigo+(count+1),
