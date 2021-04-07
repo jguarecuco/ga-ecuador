@@ -24,8 +24,8 @@ module.exports = {
                 }
             ],
             order:[
-                ['codigo','ASC'],
-                ['dactivo','descripcion','ASC']
+                ['id','ASC']
+                //['dactivo','descripcion','ASC']
             ]
         });
         res.status(200).json(articulos);
