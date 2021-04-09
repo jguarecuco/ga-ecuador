@@ -4,7 +4,7 @@ const { Op } = require("sequelize");
 module.exports = {
     Get: async (req, res) => {
         let articulos = await Articulo.findAll({
-            //attributes: ["id", "codigo", "articulo", "anio_c", "valor_c", "valor_d","ubicacion_id","estado_id"],
+            //attributes: ["codigo","color","marca","serie","anio_c","valor_c","estado_id","ubicacion_id","dactivo_id"],
             include: [
                 {
                     association: 'dactivo',
